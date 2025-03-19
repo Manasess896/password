@@ -1,0 +1,92 @@
+.form-group{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+}
+.password-rule{
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform :capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+
+}
+.labels{
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform :capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+input[type="checkbox"]{
+  width: 19px;
+  height: 20px;
+   
+    
+}
+input[type="checkbox"]:checked{
+   
+    animation: select 0.5s ease-in-out;
+}
+@keyframes select{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.6);
+        accent-color: green;
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+.password-length{
+  width: 50%;
+    background-color: #f9f9f9;
+
+}
+.password-length:active{
+    accent-color: green;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.hover-container{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+}
+.hover-text{
+    width: 150px;
+    background-color: lightblue;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.hover-container:hover .hover-text{
+    opacity: 1;
+}

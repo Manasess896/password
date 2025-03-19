@@ -1,0 +1,24 @@
+
+@media screen and (min-width:400px) {
+    #mypassword{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin: 2vh auto;
+    }
+ 
+}
+
+/* Desktop/Tablet layout */
+@media screen and (min-width: 768px) {
+ 
+
+    #mypassword {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin: 2vh auto;
+    }
+}

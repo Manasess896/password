@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Create Strong &nbsp; Secure Passwords</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Generate strong, secure, and random passwords with our free password generator tool. Create passwords with uppercase, lowercase, numbers, and special characters.">
+    <meta name="keywords" content="password generator, strong password, secure password, random password, password tool, password creator">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generatepassword.infohub18.tech">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assests/images/downloader.webp">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <!-- These tags control how your site appears when shared on social media -->
+    <meta property="og:title" content="Password Generator - Create Strong & Secure Passwords">
+    <meta property="og:description" content="Generate strong, secure, and random passwords with our free password generator tool.">
+    <!-- og:image should be 1200x630 pixels for optimal display on social platforms -->
+    <!-- Create this image and place it in your assets folder -->
+    <meta property="og:image" content="https://generatepassword.infohub18.tech/assests/images/downloader.webp">
+    <meta property="og:url" content="https://generatepassword.infohub18.tech">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Password Generator",
+      "description": "Generate strong, secure, and random passwords with our free password generator tool.",
+      "url": "https://generatepassword.infohub18.tech",
+      "applicationCategory": "Security Tool",
+      "operatingSystem": "Any",
+      "image": "https://generatepassword.infohub18.tech/assests/images/downloader.webp",
+      "logo": "https://generatepassword.infohub18.tech/assests/images/downloader.webp"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="assests\css\style.css">
+    <link rel="stylesheet" href="assests\css\main.css">
+    <link rel="stylesheet" href="assests\css\password-layout.css">
+    <link rel="stylesheet" href="assests\css\responsive.css">
+    <link rel="stylesheet" href="assests\css\password-list.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/9d3f00a5c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>random password generator</h2>
+    <div class="generatepassword">
+   
+    <div class="form">
+        <!-- this where the password will be displayed -->
+        
+        <div class="password-container" id="password-container" onclick="copypassword()"></div>
+        <div class="hover-container">
+            <span class="hover-text">click to generate another password</span>
+            <button class="regenerate-btn fa fa-refresh"   onclick="regeneratepassword()" id="icon" ></button>
+        </div>
+        <!-- this will show the level of password strength -->
+         </div>
+        <div class="password-strength" id="password-strength"></div>
+        <div class="form-group">
+            <!-- this will show the length of password  -->
+            <label class="labels" for="password-length">password length</label>
+        <span class="characters-length">characters length:<i id="characters-length"></i></span>
+       <input class="password-rule password-length" type="range" name="password length" id="password-length" min="8" max="40" value="10">
+
+       <label class="labels" for="uppercase">uppercase</label >
+         <input class="password-rule" type="checkbox" name="" id="uppercase" checked>
+            <label class="labels" for="lowercase">lowercase</label >
+            <input class="password-rule" type="checkbox" name="" id="lowercase" checked>
+            <label class="labels" for="numbers">numbers</label >
+            <input class="password-rule" type="checkbox" name="" id="number" checked>
+            <label class="labels" for="special characters">symbols</label>
+            <input class="password-rule" type="checkbox" name="" id="special-characters">
+            </div>
+   
+    <div id="mypassword"></div>
+</div>
+<div class="validatepassword" id="validatepassword"></div>
+   <script src="assests\js\main.js"></script> 
+   <script src="assests\js\password-validator.js"></script>
+   <script src="assests\js\copy.js"></script>
+   <script src="assests\js\pastpassword.js"></script>
+   <script src="assests\js\regenerate.js"></script>
+
+</body>
+</html>
