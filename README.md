@@ -86,8 +86,8 @@ Contributions, issues, and feature requests are welcome!
 ## 👤 Author
 
 Your Name
-- GitHub: [@YourGitHubUsername](https://github.com/YourGitHubUsername)
-- Website: [YourWebsite](https://yourwebsite.com)
+- GitHub: [@manases896](https://github.com/manases896)
+- Website:
 
 ## ⭐ Show your support
 
